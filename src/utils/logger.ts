@@ -1,3 +1,4 @@
+/// <reference types="node" />
 export class Logger {
     static info(message: string, data?: any): void {
         console.log(`[INFO] ${new Date().toISOString()} - ${message}`, data || '');
