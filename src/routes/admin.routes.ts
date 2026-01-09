@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { LedgerController } from '../controllers/Ledger.controller';
+import { LedgerController } from '../controllers/Ledger.controller.js';
 import { query } from 'express-validator';
-import { validate } from '../middlewares/validation.middleware';
+import { validate } from '../middlewares/validation.middleware.js';
 
 const router = Router();
 

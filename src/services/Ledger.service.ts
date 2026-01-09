@@ -1,5 +1,5 @@
-import { LedgerAccountModel } from '../models/LedgerAccount.model';
-import { TransactionModel } from '../models/Transaction.model';
+import { LedgerAccountModel } from '../models/LedgerAccount.model.js';
+import { TransactionModel } from '../models/Transaction.model.js';
 
 export class LedgerService {
     static async getLedgerStatus(): Promise<any> {

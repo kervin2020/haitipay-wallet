@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { LedgerService } from '../services/Ledger.service';
-import { ResponseUtil } from '../utils/response';
-import { asyncHandler } from '../middlewares/errorHandler.middleware';
+import { LedgerService } from '../services/Ledger.service.js';
+import { ResponseUtil } from '../utils/response.js';
+import { asyncHandler } from '../middlewares/errorHandler.middleware.js';
 
 export class LedgerController {
     static getLedgerStatus = asyncHandler(async (req: Request, res: Response) => {

@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import { WalletModel } from '../models/Wallet.model';
-import { ResponseUtil } from '../utils/response';
+import { WalletModel } from '../models/Wallet.model.js';
+import { ResponseUtil } from '../utils/response.js';
 
 export interface AuthenticatedRequest extends Request {
     walletId?: string;

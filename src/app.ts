@@ -3,10 +3,10 @@ import cors from 'cors';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
 import swaggerUi from 'swagger-ui-express';
-import { swaggerSpec } from './config/swagger';
-import routes from './routes';
-import { errorHandler } from './middlewares/errorHandler.middleware';
-import { Logger } from './utils/logger';
+import { swaggerSpec } from './config/swagger.js';
+import routes from './routes/index.js';
+import { errorHandler } from './middlewares/errorHandler.middleware.js';
+import { Logger } from './utils/logger.js';
 
 dotenv.config();
 

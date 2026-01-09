@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
-import { WalletService } from '../services/Wallet.service';
-import { TransactionService } from '../services/Transaction.service';
-import { ResponseUtil } from '../utils/response';
-import { asyncHandler } from '../middlewares/errorHandler.middleware';
-import { AuthenticatedRequest } from '../middlewares/auth.middleware';
+import { WalletService } from '../services/Wallet.service.js';
+import { TransactionService } from '../services/Transaction.service.js';
+import { ResponseUtil } from '../utils/response.js';
+import { asyncHandler } from '../middlewares/errorHandler.middleware.js';
+import { AuthenticatedRequest } from '../middlewares/auth.middleware.js';
 
 export class WalletController {
     static createWallet = asyncHandler(async (req: Request, res: Response) => {

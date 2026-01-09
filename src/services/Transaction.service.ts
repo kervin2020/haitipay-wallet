@@ -1,15 +1,15 @@
-import { TransactionModel } from '../models/Transaction.model';
-import { WalletModel } from '../models/Wallet.model';
-import { LedgerAccountModel } from '../models/LedgerAccount.model';
-import { WalletOwnerModel } from '../models/WalletOwner.model';
-import { executeTransaction } from '../config/database';
+import { TransactionModel } from '../models/Transaction.model.js';
+import { WalletModel } from '../models/Wallet.model.js';
+import { LedgerAccountModel } from '../models/LedgerAccount.model.js';
+import { WalletOwnerModel } from '../models/WalletOwner.model.js';
+import { executeTransaction } from '../config/database.js';
 import { 
     RechargeWalletRequest, 
     TransferWalletRequest, 
     RechargeResponse, 
     TransferResponse 
 } from '../types';
-import { AppError } from '../middlewares/errorHandler.middleware';
+import { AppError } from '../middlewares/errorHandler.middleware.js';
 
 export class TransactionService {
     // Montants en centimes HTG

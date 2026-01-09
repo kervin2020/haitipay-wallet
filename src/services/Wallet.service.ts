@@ -1,7 +1,7 @@
-import { WalletOwnerModel } from '../models/WalletOwner.model';
-import { WalletModel } from '../models/Wallet.model';
+import { WalletOwnerModel } from '../models/WalletOwner.model.js';
+import { WalletModel } from '../models/Wallet.model.js';
 import { CreateWalletRequest, WalletResponse } from '../types';
-import { AppError } from '../middlewares/errorHandler.middleware';
+import { AppError } from '../middlewares/errorHandler.middleware.js';
 
 export class WalletService {
     static validateCreateWallet(data: CreateWalletRequest): void {

@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
-import walletRoutes from './wallet.routes';
-import adminRoutes from './admin.routes';
+import walletRoutes from './wallet.routes.js';
+import adminRoutes from './admin.routes.js';
 
 const router = Router();
 

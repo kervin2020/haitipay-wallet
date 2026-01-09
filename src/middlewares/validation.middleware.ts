@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { body, validationResult } from 'express-validator';
-import { ResponseUtil } from '../utils/response';
+import { ResponseUtil } from '../utils/response.js';
 
 export const validate = (req: Request, res: Response, next: NextFunction) => {
     const errors = validationResult(req);
