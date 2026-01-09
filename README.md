@@ -129,3 +129,4 @@ Scripts de test disponibles :
 ```bash
 node test-api.js
 ```
+# haitipay-wallet
