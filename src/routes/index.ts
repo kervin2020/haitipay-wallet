@@ -21,6 +21,29 @@ router.get('/', (req: Request, res: Response) => {
 
 const v1Router = Router();
 
+v1Router.get('/', (req: Request, res: Response) => {
+    res.json({
+        success: true,
+        message: 'HaitiPay Wallet API v1',
+        version: '1.0.0',
+        endpoints: {
+            wallet: {
+                create: 'POST /api/v1/wallet/create',
+                recharge: 'POST /api/v1/wallet/recharge',
+                profile: 'GET /api/v1/wallet/profile/:phoneNumber',
+                balance: 'GET /api/v1/wallet/balance/:phoneNumber',
+                transfer: 'POST /api/v1/wallet/transfer',
+                transactions: 'GET /api/v1/wallet/transactions/:phoneNumber'
+            },
+            admin: {
+                ledgerStatus: 'GET /api/v1/admin/ledger/status',
+                ledgerTransactions: 'GET /api/v1/admin/ledger/transactions'
+            },
+            documentation: '/api-docs'
+        }
+    });
+});
+
 v1Router.use('/wallet', walletRoutes);
 v1Router.use('/admin', adminRoutes);
 
