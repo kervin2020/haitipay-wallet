@@ -19,9 +19,7 @@ router.get('/', (req: Request, res: Response) => {
     });
 });
 
-const v1Router = Router();
-
-v1Router.get('/', (req: Request, res: Response) => {
+const v1Info = (req: Request, res: Response) => {
     res.json({
         success: true,
         message: 'HaitiPay Wallet API v1',
@@ -42,7 +40,12 @@ v1Router.get('/', (req: Request, res: Response) => {
             documentation: '/api-docs'
         }
     });
-});
+};
+
+const v1Router = Router();
+
+router.get('/v1', v1Info);
+v1Router.get('/', v1Info);
 
 v1Router.use('/wallet', walletRoutes);
 v1Router.use('/admin', adminRoutes);
