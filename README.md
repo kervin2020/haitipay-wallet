@@ -129,4 +129,14 @@ Scripts de test disponibles :
 ```bash
 node test-api.js
 ```
+
+## 🚀 Déploiement sur Render
+
+Le projet est prêt pour le déploiement sur Render. Voir [DEPLOY_RENDER.md](./DEPLOY_RENDER.md) pour les instructions complètes.
+
+**Configuration rapide** :
+1. Connectez votre repository à Render
+2. Utilisez le fichier `render.yaml` pour la configuration automatique
+3. Configurez les variables d'environnement (DB_HOST, DB_USER, DB_PASSWORD, etc.)
+4. Initialisez la base de données avec `src/database/create-database.sql`
 # haitipay-wallet

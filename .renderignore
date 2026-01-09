@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+.git/
+docs/
+*.md
+!README.md
+test-*.js
+test-*.sh

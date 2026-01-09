@@ -4,6 +4,11 @@ import { Logger } from './utils/logger';
 
 const PORT = process.env.PORT || 3000;
 
+if (!process.env.DB_HOST || !process.env.DB_NAME) {
+    Logger.error('Missing required environment variables: DB_HOST, DB_NAME');
+    process.exit(1);
+}
+
 testConnection()
     .then(() => {
         app.listen(PORT, () => {
