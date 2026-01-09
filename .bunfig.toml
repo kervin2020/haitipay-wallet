@@ -1,0 +1,3 @@
+# Désactiver Bun pour forcer npm
+[install]
+auto = false

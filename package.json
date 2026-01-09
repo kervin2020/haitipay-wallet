@@ -10,6 +10,7 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "postinstall": "npm run build",
+    "install:render": "rm -rf node_modules bun.lockb .bun && npm install --legacy-peer-deps",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,6 +20,7 @@
   ],
   "author": "",
   "license": "ISC",
+  "packageManager": "npm@10.0.0",
   "dependencies": {
     "@types/node": "^25.0.3",
     "@types/swagger-jsdoc": "^6.0.4",
