@@ -103,7 +103,7 @@ GET /api/v1/admin/ledger/status
 
 ## Notes
 
-- Montants en centimes HTG
+- Montants en gourdes HTG
 - PIN hashé avec bcrypt
 - Double écriture comptable pour toutes les transactions
 - Transactions SQL atomiques
