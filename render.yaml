@@ -3,7 +3,7 @@ services:
     name: haitipay-wallet-api
     env: node
     plan: free
-    buildCommand: npm run install:render && npm run build
+    buildCommand: rm -rf node_modules bun.lockb .bun package-lock.json && npm install --legacy-peer-deps && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
