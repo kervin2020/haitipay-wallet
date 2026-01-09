@@ -1,7 +1,7 @@
 import pool from '../config/database.js';
 import { Wallet } from '../types';
 import { v4 as uuidv4 } from 'uuid';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 export class WalletModel {
     static async create(wallet: Omit<Wallet, 'id' | 'createdAt' | 'lastActivity'>): Promise<Wallet> {
