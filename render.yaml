@@ -22,6 +22,8 @@ services:
         sync: false
       - key: CORS_ORIGIN
         value: "*"
+      - key: BUN_VERSION
+        value: ""
 
 # Note: Render ne supporte pas MySQL nativement dans le plan gratuit
 # Vous devrez utiliser une base MySQL externe (PlanetScale, AWS RDS, etc.)
