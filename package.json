@@ -10,6 +10,7 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "install:render": "rm -rf node_modules bun.lockb .bun && npm install --legacy-peer-deps",
+    "build:render": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
